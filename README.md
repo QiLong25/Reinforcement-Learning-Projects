@@ -29,12 +29,19 @@ The Taxi domain was introduced in the paper "The MAXQ Method for Hierarchical Re
 
 ## MP3: TD & Q-Learning
 
- *  **TD(0)**: estimate value function of a policy.
+ *  **TD(0)**: one-step bootstrap estimating value function of a policy.
 
- *  **Q-Learning**: Linear approximation with Fourier basis
+ *  **Q-Learning**: one-step bootstrap target optimizing policy.
+
+ *  **Function Approximation**: Linear approximation with Fourier basis.
 
 ![Q-Learning](https://github.com/QiLong25/Reinforcement-Learning-MPs/assets/143149589/0152f2ba-3e78-4417-bc66-cfb5f23efd67)
 
+## MP4: Actor-critic Policy Gradient
+
+ *  **Policy Gradient**: Softmax parametrization of policy, update theta directly with bootstrap target gradient ascent.
+
+ *  **Actor-Critic**: Critic - Value Prediction Model on every state. Actor - Optimizing policy using policy gradient ascent. 
 
 
 
