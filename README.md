@@ -1,20 +1,20 @@
 # Reinforcement-Learning-MPs
- Reinforcement Learning-UIUC-CS course assignments
+ Reinforcement Learning-UIUC-CS course projects
 
-## MP1: MDP & Bellman Equation
+## Project 1: Cart Pole
 This environment corresponds to the version of the cart-pole problem described by Barto, Sutton, and Anderson in "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problem". A pole is attached by an un-actuated joint to a cart, which moves along a frictionless track. The pendulum is placed upright on the cart and the goal is to balance the pole by applying forces in the left and right direction on the cart.
 
 [Cart Pole](https://www.gymlibrary.dev/environments/classic_control/cart_pole/)
 
- *  **Collect Trajectory from Simulator**: collect (state, action, reward) triples given policy.
+ *  **MDP & Bellman Equation**: Collect trajectory from simulator, set up MDP, compute infinite-horizon value function.
 
- *  **Markov Decision Process**: setup has state, action, transition, reward, discount factor spaces.
+ *  **Random Search Learner**: randomly generate policies, evaluate by sampling trajectory as baseline.
  
- *  **Bellman Equation**: compute infinite-horizon value function.
+ *  **Policy Gradient**: Softmax parametrization of policy, update theta directly with bootstrap target gradient ascent.
 
- *  **Random Search Learner**: randomly generate policies, evaluate by sampling trajectory, output optimum.
+ *  **Actor-Critic**: Critic - Value Prediction Model on every state. Actor - Optimizing policy using policy gradient ascent.
   
-## MP2: Policy Iteration & Value Iteration
+## Project 2: Taxi
 The Taxi domain was introduced in the paper "The MAXQ Method for Hierarchical Reinforcement Learning" by Thomas G. Dietterich in ICML 1998.
 
 ![taxi](https://github.com/QiLong25/Reinforcement-Learning-MPs/assets/143149589/308d2bbb-11bc-4c78-a944-5036291e453e)
@@ -25,9 +25,11 @@ The Taxi domain was introduced in the paper "The MAXQ Method for Hierarchical Re
 
  *  **Policy Evaluation Algorithm**.
 
- *  **Policy Iteration Algorithm**: use policy evaluation as sub-routine.
+## Disclaimer
 
-## MP3: TD & Q-Learning
+THIS PROJECT IS INTENDED FOR WORK DISPLAY AND SHARING PURPOSES ONLY. THE CODE AND MATERIALS PROVIDED HERE SHOULD NOT BE SUBMITTED AS YOUR OWN WORK IN ANY FORM. USE OF THIS CODE FOR ACADEMIC ASSIGNMENTS OR EXAMS WITHOUT PROPER ATTRIBUTION OR PERMISSION MAY CONSTITUTE ACADEMIC MISCONDUCT INCLUDING PLAGIARISM. THE AUTHOR OF THIS PROJECT IS NOT RESPONSIBLE FOR ANY CONSEQUENCES ARISING FROM THE IMPROPER USE OF THIS CODE.
+
+ *  **Policy Iteration Algorithm**: use policy evaluation as sub-routine.
 
  *  **TD(0)**: one-step bootstrap estimating value function of a policy.
 
@@ -37,11 +39,7 @@ The Taxi domain was introduced in the paper "The MAXQ Method for Hierarchical Re
 
 ![Q-Learning](https://github.com/QiLong25/Reinforcement-Learning-MPs/assets/143149589/0152f2ba-3e78-4417-bc66-cfb5f23efd67)
 
-## MP4: Actor-critic Policy Gradient
 
- *  **Policy Gradient**: Softmax parametrization of policy, update theta directly with bootstrap target gradient ascent.
-
- *  **Actor-Critic**: Critic - Value Prediction Model on every state. Actor - Optimizing policy using policy gradient ascent. 
 
 
 
